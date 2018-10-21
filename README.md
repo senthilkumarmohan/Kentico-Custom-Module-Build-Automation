@@ -1,10 +1,10 @@
-Kentico Custom Module Build Automation
+<h2>Kentico Custom Module Build Automation</h2>
 
 Kentico CMS allows us to build custom functionality using custom modules. We can define module level settings (configs) as part of module definition along with default values. 
 
 Kentico allows developers to create installation (nuget) packages for such custom modules and install it on other instances of Kentico.  Ater installing the custom modules on a Kentico instance you can override the module config values with site specific values.
 
-Issues with the above approach:
+<h3>Issues with the above approach:</h3>
 
 1) We have to use Kentico module management interface to create installation packages for custom modules - which means its difficult to integrate with Continous Build tools like Octopus/Team City.
 
@@ -12,7 +12,7 @@ Issues with the above approach:
 
 3) We couldn't provide site specific config values for other Kentico instances.
 
-Solution:
+<h3>Solution:</h3>
 1) Introduce a custom Module.xml file per custom module - which holds the Webpart, FormControls, Config definitions with default values and site specific config values.
 
 2) Create and AbstractModule class which in 'oninit' event reads the above mentioned Module.xml file and does the following:
