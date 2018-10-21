@@ -1,3 +1,5 @@
+Kentico Custom Module Build Automation
+
 Kentico CMS allows us to build custom functionality using custom modules. We can define module level settings (configs) as part of module definition along with default values. 
 
 Kentico allows developers to create installation (nuget) packages for such custom modules and install it on other instances of Kentico.  Ater installing the custom modules on a Kentico instance you can override the module config values with site specific values.
