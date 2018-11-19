@@ -13,7 +13,7 @@ Kentico allows developers to create installation (nuget) packages for such custo
 3) We couldn't provide site specific config values for other Kentico instances.
 
 <h3>Solution:</h3>
-1) Introduce a custom Module.xml file per custom module - which holds the Webpart, FormControls, Config definitions with default values and site specific config values.
+1) Introduce a custom Module.config file per custom module - which holds the Webpart, FormControls, Config definitions with default values and site specific config values.
 
 2) Create and AbstractModule class which in 'oninit' event reads the above mentioned Module.xml file and does the following:
   a) Create/Update WebParts
